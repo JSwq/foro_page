@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Comunidad.</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="page-results.js"></script>
+
+    <link rel="stylesheet" href="features.css">
+    
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .img-border{
+        border-radius: 10%;
+      }
+      .border-header{
+        border-radius: 50%;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+        <header class="p-3 mb-3 border-bottom">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 link-secondary">Ayuda</a></li>
+                  <li><a href="#" class="nav-link px-2 link-dark">Soporte</a></li>
+                  <li><a href="#" class="nav-link px-2 link-dark">Comunidad</a></li>
+                  <li><a href="#" class="nav-link px-2 link-dark"></a></li>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
+                </form>
+        
+                <div class="dropdown text-end">
+                  <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">Resultados</a></li>
+                    <li><a class="dropdown-item" href="#">Configuracion</a></li>
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="index.html">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+    </div>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!--IMAGENE CARRUSEL-->
+        <img src="Recursos/who_us.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>¿Qué somos?</h1>
+            <p>Somos un grupo estudiantil en un proyecto de emprendimiento, nuestro próposito es dar nuestro granito de arena para ayudar a combatir la pandemia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--IMAGENE CARRUSEL-->
+        <img src="Recursos/SC-19.jpg" alt="">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>SC-19</h1>
+            <p></p>
+            <p><a class="btn btn-lg btn-primary" href="#">¡Registrate ahora!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--IMAGENE CARRUSEL-->
+        <img src="Recursos/soport.jpg" alt="">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            
+            <h1>Soporte técnico.</h1>
+            <p>Sentimos las molestias que pueden causar algunos de nuestros algoritmos, estamos en etapa de desarrollo.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Desarrolladores.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="border-header" src="Recursos/usuario.jpg" alt="">
+
+        <h2 class="fw-normal">Usuario</h2>
+        <p>Evitar un posible contagio y tomar mejores medidas preventivas ante la presencia de un posble caso <b>COVID-19</b>.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="border-header" src="Recursos/direct.jpg" alt="">
+
+        <h2 class="fw-normal">Directivos</h2>
+        <p>Mantener un eficiente control sanitario para no generar mas contagios entre usuario y personal.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="border-header" src="Recursos/general.jpg" alt="">
+
+        <h2 class="fw-normal">Beneficios.</h2>
+        <p>Disminuir la propagacion del virus <b>COVID-19</b> dentro de alguna institución.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Adaptacción para moviles.</h2>
+        <p class="lead">Estamos concientes de que mucha de la comunidad prefiere usar el móvil antes que una computadora, es por ello que estamos trabajando en adaptabilidad para smartphone.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-border"src="Recursos/smartphone.jpg" alt="Télefono inteligente">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">¿Te gustaría apoyar?</h2>
+        <p class="lead">Dejanos sugerencias, y las tomaremos con mucho cariño para mejorar la comunidad.
+        </p>
+        <br>
+        <p>Puedes apoyarnos:</p>
+        <ul>
+          <li>Reportando errores.</li>
+          <li>Dejando comentarios positivos.</li>
+          <li>Respondiendo fielmente nuestras encuestas.</li>
+        </ul>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-border" src="Recursos/delevepers.jpg" alt="" srcset="">
+
+      </div>
+    </div>
+
+    
+    <!--TARJETAS DE PRESENTACION-->
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Comunidad</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('Recursos/COMUNIDAD/two_person.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Me han hecho la vida más facil.</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>CECyTEM Nezahualcoyotl II</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('Recursos/COMUNIDAD/three_person.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Los casos de enfermedad han disminuido.</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" style="background-image: url('Recursos/COMUNIDAD/first_person.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Supér recomendable</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Empresas</h5> 
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Información.</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Registrar mi empresa.</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Soporte técnico.</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos y condiciones.</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Precios.</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Instituciones </h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Información</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Registrar mi institución</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Soporte técnico</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos y condiciones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Precuios</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Usuario</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Entrar</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Registrate</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">¿Cómo ingresar?</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos y condiciones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nuestro impacto a nivel laboral</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Suscribete y recibe novedades a tu correo :)</h5>
+                <p>Al hacer enviar aceptas nuestras <a href="">Politicas de usuario.</a></p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email ">
+                  <button class="btn btn-primary" type="button">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 Company, Inc. Todo los derechos reservados.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
